@@ -11,7 +11,7 @@
 #     Original version 0.18 - April 10 2020 https://calomel.org/zfs_health_check_script.html
 #     I do not claim to be the original author of this script: credits to calomel.org
 # Changelog (woftor GitHub):
-#     - Added some lines to make the date logic work in Debian 10 (based) systems
+#     - Added some lines to make the date logic work in Debian 10+ (based) systems
 #     - A typo in a description
 #     - Added rudimentary logging to a file support
 ###
