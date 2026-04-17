@@ -108,7 +108,7 @@ if [ ${problems} -eq 0 ]; then
     fi
 
     ### Debian (based) 10 with GNU supported date format
-     scrubRawDate=$(/sbin/zpool status $volume | grep scrub | awk '{print $12" "$13" " $14" " $15" "$16}')
+     scrubRawDate=$(/sbin/zpool status $volume | grep scrub | awk '{print $(NF-4)" "$(NF-3)" "$(NF-2)" "$(NF-1)" "$NF}')
      scrubDate=$(date -d "$scrubRawDate" +%s)
 
     ### Ubuntu with GNU supported date format
